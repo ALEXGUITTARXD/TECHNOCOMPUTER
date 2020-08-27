@@ -1,0 +1,413 @@
+/*heramientas globales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 60%;
+}
+
+body {
+    font-family: 'Lato', serif;
+    font-size: 1.6rem;
+    margin: 0 0;
+    border: 0 0;
+    padding: 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* utilidades */
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.d-block {
+    display: block!important;
+}
+
+
+/* boton */
+
+.boton {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.boton-amarillo {
+    background-color: rgb(255, 187, 0);
+}
+
+.boton-verde {
+    background-color: rgb(133, 199, 20);
+}
+
+.boton-azul {
+    background-color: rgb(21, 183, 233);
+}
+
+.boton-mapa {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-general {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-tamaño {
+    max-width: 100px;
+    min-width: 100px;
+}
+
+
+/*header*/
+
+.logo {
+    width: 50rem;
+}
+
+.site-header {
+    background-color: rgb(26, 26, 26);
+    padding: 0rem 0 0rem 0;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0px;
+}
+
+
+/*Navegacion*/
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+/*hero*/
+
+.texto-inicio {
+    background: url(../img/banner3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 85.5vh;
+    min-height: 60rem;
+}
+
+.texto-inicio .home {}
+
+.texto-inicio h1 {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0 0;
+    padding: 16rem 0 0rem 0;
+    color: black;
+    font-size: 7rem;
+}
+
+.texto-inicio p {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0 0;
+    padding: 13rem 0 8rem 0;
+    color: black;
+    font-size: 7rem;
+}
+
+.texto-inicio img {
+    padding-left: 1.9rem;
+}
+
+
+/* nosotros */
+
+.contenido-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-textonosotros {
+    text-align: center;
+    line-height: 2;
+    max-width: 50%;
+}
+
+.contenido-textonosotros p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.contenido-textonosotros h2 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+/* servicios */
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio {
+    margin: 1rem 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #B5B5B5;
+    border-radius: 1rem;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+.servicio img {
+    border-radius: 1rem 1rem 0 0;
+    max-height: 26rem;
+}
+
+.servicio h3 {
+    font-size: 2.5rem;
+}
+
+.titulo h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* productos */
+
+
+/* footer */
+
+.site-footer {
+    background-color: rgb(26, 26, 26);
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.contenido-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-footer {
+    padding: 0rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-footer-dos {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+}
+
+
+/* html servicios */
+
+.titulo-servicios h2 {
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.contenido-servicios {}
+
+.texto-servicios p {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.botones-servicios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home__search-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 21.5%;
+}
+
+.home__form {
+    --searchbox-height: 44px;
+    background: white;
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: var(--searchbox-height);
+    position: relative;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    margin: 0 auto;
+    max-width: 564px;
+    cursor: text;
+}
+
+.home__form .google-search {
+    --searchbox-height: 44px;
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 92%;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 0 48px;
+    padding-right: 0;
+    padding-top: 10px;
+}
+
+.home__form .fa-search {
+    color: #999;
+    float: left;
+    margin-left: 21px;
+    margin-top: 15px;
+    font-size: 15px
+}
+
+.form__microphone-icon {
+    border: 0;
+    background: url(../img/google-microfono.svg) no-repeat center;
+    background-size: 21px 21px;
+    cursor: pointer;
+    padding: 22px 12px 0;
+    width: 21px;
+    float: right;
+    margin-top: 11px;
+    margin-right: 16px
+}
+
+.iconos-footer {
+    width: 6rem;
+}
+
+.iconos-footer-whatsapp {
+    width: 2.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.telefono p {
+    padding-left: 8rem;
+    padding-top: 1rem;
+}
+
+.imagen-gaming img {
+    max-height: 100%;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    margin: 1rem 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #B5B5B5;
+    border-radius: 1rem;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+.producto img {
+    border-radius: 1rem 1rem 0 0;
+    width: 375rem;
+    height: 36rem;
+}
+
+.producto h3 {
+    max-width: 100%;
+}
+
+.producto p {
+    font-size: 2.5rem;
+}
+
+.producto h3 {
+    font-size: 2.5rem;
+}
+
+.texto-nosotros p {
+    font-size: 2.5rem;
+}
+
+.texto-precio p {
+    font-size: 1.8rem;
+}
+
+.contenido-servicios {
+    text-align: center;
+}
+
+.titulo-productos h2 {
+    font-size: 6rem;
+}

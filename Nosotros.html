@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoComputer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="imagen logo">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="servicios.html">Servicios</a>
+                    <a href="Productos.html">Productos</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="contenedor seccion">
+        <div class="contenido-servicios">
+            <div class="titulo titulo-servicios">
+                <h2>Más Sobre Nosotros</h2>
+    </main>
+    <section class="contenedor seccion">
+        <div class="texto-nosotros">
+            <p>Somos un negocio dedicado a la renta de internet, venta de productos de papelería,mantenimiento y reparación de equipos de computo, celulares e impresoras, Además apoyamos con tareas de cualquier nivel académico. Para estos trabajos contamos
+                con ingenieros especializados en tecnología y matemáticas, para garantizar un servicio completo y trabajos escolares bien hechos. Contamos también con servicio a domicilio dentro de nuestra área de trabajo. Este establecimiento abrió por
+                primera vez el día 2 de febrero del año 2020, el negocio es atendido por Ingenieros en sistemas computaciónales y en biotecnología, los cuales se esmeran en su trabajo para que tu visita sea una experiencia única. Además el personal esta
+                en constante actualización, esto quiere decir que recibiras un servicio con una calidad plus.</p>
+        </div>
+        <img src="img/Local.jpg" alt="">
+        <img src="img/TC7.jpg" alt="">
+        <img src="img/TC.jpg" alt="">
+        <img src="img/TC3.jpg" alt="">
+        <img src="img/TC5.jpg" alt="">
+        <img src="img/TC6.jpg" alt="">
+        <img src="img/TC2.jpg" alt="">
+        <img src="img/TC8.jpg" alt="">
+    </section>
+
+    <section class="contenedor">
+        <div id='map'></div>
+        <div class="boton-mapa">
+            <a href="https://www.google.com.mx/maps/place/Technocomputer/@19.2652222,-99.021575,19z/data=!4m14!1m8!3m7!1s0x0:0x0!2zMTnCsDE1JzU0LjgiTiA5OcKwMDEnMTUuNyJX!3b1!7e2!8m2!3d19.2652207!4d-99.0210237!3m4!1s0x85ce0300fb79e0ed:0x8cfb17dc9d826730!8m2!3d19.2651299!4d-99.0209053"
+                class="boton boton-verde" target="_blank">Encuentranos en Google Maps aqui</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="site-footer">
+            <div class="contenedor contenido-footer contenedor-footer">
+
+                <div class="barra">
+
+                    <nav class="navegacion">
+                        <a href="servicios.html">Servicios</a>
+                        <a href="Productos.html">Productos</a>
+                        <a href="Nosotros.html">Nosotros</a>
+                    </nav>
+                    <p>Todos los derechos reservados 2020 &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <div class="site-footer">
+            <div class="contenedor contenido-footer-dos contenedor-footer navegacion">
+                <div class="telefono">
+                    <p>Telefono: 5515492379</p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/Technocomputer-112922807114712/?__tn__=%2Cd%2CP-R&eid=ARCQHXP0qMSC8Nec6eKaUa7CDdXFuzZlXmJ31MvRBSjB5WMWUHrjIFu4T5PSXFtuugdksoyU9oXD88F5" class="" target="_blank">
+                        <img class="iconos-footer" src="img/facebook.svg" alt="">
+                    </a>
+                    <a href="https://chat.whatsapp.com/IISZq4CFIPQGFfNlEKWyeF" target="_blank">
+                        <img class="iconos-footer-whatsapp" src="img/whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <img class="iconos-footer" src="" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/search.js"></script>
+    <script type="text/javascript">
+        //Cargando nuestro mapa
+        var mapsipe = L.map('map').
+            // var marker = L.marker([19.26522, -99.02088]).addTo(mapsipe);
+            // marker.bindPopup("<b>Hola!</b><br>Sipe Informática se situa aquí.").openPopup();
+        setView([19.26522, -99.02088],
+            15); //[38.6202, -0.5731] es la latitud y longitud de la zona que queremos mostrar, en nuestro caso Ibi 
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+            maxZoom: 25
+        }).addTo(mapsipe);
+        var marker = L.marker([19.26522, -99.02088]).addTo(mapsipe);
+        marker.bindPopup("<b>TechnoComputer</b><br>¡Nos encontramos aqui!.").openPopup();
+    </script>
+
+
+</body>
