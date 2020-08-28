@@ -411,3 +411,24 @@ img {
 .titulo-productos h2 {
     font-size: 6rem;
 }
+
+.contenido-nosotroshtml {
+    display: flex;
+    padding: 1rem;
+}
+
+.contenido-nosotroshtml img {
+    padding: 0 1rem 0 1rem;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background: #024959;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
